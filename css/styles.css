@@ -93,6 +93,29 @@ body {
 .margin-right-sm {
     margin-right: 1.6rem !important;
 }
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+.grid {
+    display: grid; 
+    gap: 3.2rem;
+}
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.section-how div div {
+    background-color: #222;
+    font-size: 2rem;
+}
 
 /****************** /
 /******************/
@@ -211,3 +234,11 @@ body {
 
 
 /******************/
+/******************/
+/* How it works Section */
+.section-how {
+    padding: 9.6rem 0;
+    background-color: orange;
+    font-size: 2rem;
+}
+
