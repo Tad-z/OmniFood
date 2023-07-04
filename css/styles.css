@@ -123,9 +123,10 @@
 
 /******************/
 /* Features Section */
-.section-featured{
+.section-featured {
     padding: 4.8rem 0 3.2rem 0;
 }
+
 .heading-fearured-in {
     font-size: 1.4rem;
     letter-spacing: 0.75px;
@@ -139,6 +140,7 @@
     display: flex;
     justify-content: space-around;
 }
+
 .logos img {
     height: 3.2rem;
     filter: brightness(0);
@@ -150,18 +152,20 @@
 .section-how {
     padding: 9.6rem 0;
 }
+
 .step-image-box {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
+
 .step-image-box::before,
 .step-image-box::after {
     content: "";
     display: block;
     border-radius: 50%;
-    
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -169,14 +173,15 @@
     /* z-index; the higher number between two elements
     will be on top of the other element */
 }
-.step-image-box::after{
+
+.step-image-box::after {
     width: 45%;
     padding-bottom: 45%;
     background-color: #fae5d3;
     z-index: -1;
 }
 
-.step-image-box::before {   
+.step-image-box::before {
     width: 60%;
     /* 60% of the parent element width, sub for height 60%*/
     padding-bottom: 60%;
@@ -197,7 +202,7 @@
     margin-bottom: 1.2rem;
 }
 
-.step-description{
+.step-description {
     font-size: 1.8rem;
     line-height: 1.8;
     margin-bottom: 4.8rem;
@@ -208,6 +213,7 @@
 .section-meals {
     padding: 9.6rem 0;
 }
+
 .meal {
     box-shadow: 0 2.4rem 2.8rem rgba(0, 0, 0, 0.06);
     border-radius: 1.1rem;
@@ -219,58 +225,69 @@
     transform: translateY(-0.5rem);
     box-shadow: 0 4.2rem 6.4rem rgba(0, 0, 0, 0.45);
 }
+
 .meal-content {
     padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
+
 .meal-title {
     font-size: 2.4rem;
     color: #333;
     font-weight: 600;
     margin-bottom: 3.2rem;
 }
+
 .meal-attributes {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
+
 .meal-attribute {
     font-size: 1.8rem;
     display: flex;
     align-items: center;
     gap: 1.6rem;
 }
+
 .meal-tags {
     margin-bottom: 1.2rem;
     display: flex;
     gap: 0.7rem;
 }
+
 .tag {
     display: inline-block;
     padding: 0.4rem;
     font-size: 1.2rem;
     text-transform: uppercase;
-    
+
     color: #333;
     border-radius: 100px;
     font-weight: 600;
 }
+
 .tag--vegetarian {
     background-color: #51cf66;
 }
+
 .tag--vegan {
     background-color: #74b816;
 }
+
 .tag--paleo {
     background-color: #ff922b;
 }
+
 .meal-img {
     width: 100%;
 }
+
 .meal-icon {
     height: 2.4rem;
     width: 2.4rem;
-    color: #cf711f ;
+    color: #cf711f;
 }
 
 
@@ -279,7 +296,9 @@
     font-size: 1.8rem;
     margin-bottom: 4.8rem;
 }
-.link:link, .link:visited {
+
+.link:link,
+.link:visited {
     display: inline-block;
     color: #e67e22;
     text-decoration: none;
@@ -288,14 +307,16 @@
     padding-bottom: 0.3rem;
     transition: all 0.3s;
 }
-.link:hover, .link:active {
-   color: #cf711f;
-   border-bottom: 1px solid transparent;
+
+.link:hover,
+.link:active {
+    color: #cf711f;
+    border-bottom: 1px solid transparent;
 }
 
 /******************/
 /* Testimonials Section */
-.section-testimonials { 
+.section-testimonials {
     background-color: #fdf2e9;
     display: grid;
     grid-template-columns: 55fr 45fr;
@@ -319,18 +340,20 @@
     border-radius: 50%;
     margin-bottom: 1.2rem;
 }
+
 .testimonial-text {
     font-size: 1.8rem;
     line-height: 1.8;
     margin-bottom: 1.6rem;
 }
+
 .testimonial-name {
     font-size: 1.6rem;
     color: #6f6f6f;
 }
 
 .gallery {
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.6rem;
     padding: 1.6rem;
@@ -340,7 +363,7 @@
     overflow: hidden;
 }
 
-.gallery-item img{
+.gallery-item img {
     display: block;
     width: 100%;
     transition: all 0.3s;
@@ -356,25 +379,30 @@
 .section-pricing {
     padding: 9.6rem 0;
 }
+
 .plan-header {
     text-align: center;
     margin-bottom: 4.8rem;
 }
+
 .pricing-plan {
     border-radius: 11px;
     width: 75%;
 }
+
 .pricing-plan--starter {
     justify-self: end;
     border: 2px solid #fdf2e9;
     padding: 4.6rem;
 }
+
 .pricing-plan--complete {
     background-color: #fdf2e9;
     padding: 4.8rem;
     position: relative;
     overflow: hidden;
 }
+
 .pricing-plan--complete::before {
     content: "Best Value";
     position: absolute;
@@ -388,6 +416,7 @@
     padding: 0.8rem 8rem;
     transform: rotate(45deg);
 }
+
 .plan-name {
     color: #cf711f;
     font-weight: 600;
@@ -396,26 +425,31 @@
     letter-spacing: 0.75;
     margin-bottom: 3.2rem;
 }
+
 .plan-price {
     font-size: 6.2rem;
     color: #333;
     font-weight: 600;
     margin-bottom: 1.6rem;
 }
+
 .plan-price span {
     font-size: 3rem;
     font-weight: 500;
     margin-right: 0.8rem;
 }
-.plan-text{
+
+.plan-text {
     font-size: 1.6rem;
     line-height: 1.4;
-    color: #6f6f6f ;
+    color: #6f6f6f;
 }
+
 .plan-sign-up {
     text-align: center;
     margin-top: 4.8rem;
 }
+
 .plan-details {
     font-size: 1.6rem;
     line-height: 1.6;
@@ -426,18 +460,172 @@
     color: #e67e22;
     height: 3.2rem;
     width: 3.2rem;
-    border-radius: 50%; 
+    border-radius: 50%;
     background-color: #fdf2e9;
     padding: 1.6rem;
     margin-bottom: 3.2rem;
 }
+
 .feature-title {
     font-size: 2.4rem;
     color: #333;
     font-weight: 700;
     margin-bottom: 1.6rem;
 }
+
 .feature-text {
     font-size: 1.8rem;
     line-height: 1.48;
+}
+
+/******************/
+/* CTA Section */
+.section-cta {
+    padding: 4.8rem 0 12.8rem 0;
+    /* trbl */
+}
+.cta {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+    box-shadow: 0 2.4rem 2.8rem rgba(0, 0, 0, 0.15);
+    border-radius: 11px;
+    overflow: hidden;
+}
+
+.cta-text-box {
+    color: #45260a;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta .heading-secondary {
+    /* color: #45260a; */
+    color: inherit;
+    margin-bottom: 3.2rem;
+}
+
+.cta-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+    background-image: linear-gradient(to right bottom,
+            rgba(235, 151, 78, 0.2),
+            rgba(230, 125, 34, 0.2)),
+        url('../img/eating.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+}
+
+.cta-form label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: #fdf2e9;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.10);
+}
+
+.cta-form input::placeholder {
+    color: #aaa
+}
+
+.cta *:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5)
+}
+
+/******************/
+/* Footer Section */
+.footer {
+    padding: 12.8rem 0;
+    border-top: 1px solid #eee;
+}
+
+
+.footer-logo {
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+
+.footer-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contacts {
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+address p:first-child {
+    margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-links:link,
+.footer-links:visited
+{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #767676;
+    transition: all .3s;
+    
+}
+
+.footer-links:hover,
+.footer-links:active {
+    color: #555;
+}
+.footer-links ion-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.social-links {
+    display: flex;
+    list-style: none;
+    gap: 2.4rem;
+}
+
+.copyright {
+    font-size: 1.4rem;
+    color: #767676;
+    line-height: 1.6;
+    margin-top: auto;
 }
