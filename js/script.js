@@ -10,6 +10,28 @@ btnNavEl.addEventListener('click', function () {
     headerEl.classList.toggle('nav-open');
 })
 
+// Sticky
+const sectionHeroEl = document.querySelector('.section-hero');
+const observer = new IntersectionObserver(function(entries){
+    // since we are observing only one element
+    const ent = entries[0];
+    console.log(ent);
+    if (ent.isIntersecting === false) {
+        document.body.classList.add('sticky');
+    } else {
+        document.body.classList.remove('sticky')
+    }
+}, {
+    // meaning we will observe this hero section
+    // as it moves through the viewport
+    // treshold: 0, // 0% of the hero section is visible 
+    // in the viewport
+    // rootMargin: '-80px' // 80px before the hero section
+    root: null, 
+    threshold: 0,
+    rootMargin: '-80px'
+})
+observer.observe(sectionHeroEl)
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {

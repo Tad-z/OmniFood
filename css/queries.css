@@ -152,6 +152,8 @@
          gap: 4.8rem;
      }
 
+     /* This style only applies to the main-nav if the
+     nav-open class is present in one of it's parent element */
      .nav-open .main-nav {
         opacity: 1;
         pointer-events: auto;
