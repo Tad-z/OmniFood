@@ -116,6 +116,7 @@
 
      .btn-mobile-nav {
          display: block;
+         z-index: 9999;
      }
 
      .main-nav {
@@ -211,10 +212,48 @@
     .grid--2-cols {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .btn,
+.btn:link,
+.btn:visited  {
+    padding: 2.4rem 1.2rem;
+}
     .hero {
         padding: 0 3.2rem;
     }
     .section-hero {
         padding: 2.4rem 0 6.4rem 0;
+    }
+    .hero-img {
+        width: 100%;
+    }
+    .logos img {
+        height: 1.4rem;
+    }
+    .step-image-box:nth-child(2) {
+        grid-row: 1;
+    }
+    .step-image-box:nth-child(6) {
+        grid-row: 5;
+    }
+    .step-image-box {
+        transform: translateY(24px);
+    }
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+    }
+    .cta {
+        grid-template-columns: 1fr;
+    }
+    .cta-img-box {
+        height: 28rem;
+        grid-row: 1;
+    }
+    .cta-text-box {
+        padding: 3.2rem;
     }
  }
